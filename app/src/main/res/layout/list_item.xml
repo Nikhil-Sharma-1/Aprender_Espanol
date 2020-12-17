@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="88dp"
+    android:id="@+id/relativeLayout"
+    android:background="@color/tan_background">
+
+
+    <ImageView
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        android:id="@+id/image" />
+
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/image"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:background="@color/primary_ui_yellow">
+    <TextView
+        android:id="@+id/bonjour_text_view"
+        android:layout_width="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/primary_test"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        tools:text="un"/>
+
+    <TextView
+        android:id="@+id/default_text_view"
+        android:layout_width="match_parent"
+        android:paddingLeft="16dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/primary_test"
+        android:layout_height="wrap_content"
+        tools:text="One"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/tan_background"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/icon_play"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:background="?android:attr/selectableItemBackground"/>
+
+
+</RelativeLayout>
